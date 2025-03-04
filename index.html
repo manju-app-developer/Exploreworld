@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world's most beautiful destinations with videos, maps, and filters.">
+    <meta name="keywords" content="travel, tourism, destinations, vacation, explore, adventure">
+    <meta name="author" content="Explore the World">
+    <title>Explore the World - Next Gen Travel Guide</title>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome (for icons) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- Google Maps API -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    
+    <!-- JavaScript -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Explore the World 🌍</h1>
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Search destinations..." aria-label="Search destinations">
+            <select id="categoryFilter" aria-label="Filter by category">
+                <option value="all">All</option>
+                <option value="beach">Beaches</option>
+                <option value="city">Cities</option>
+                <option value="nature">Nature</option>
+                <option value="historical">Historical</option>
+            </select>
+            <select id="ratingFilter" aria-label="Filter by rating">
+                <option value="all">Any Rating</option>
+                <option value="4">4★ & above</option>
+                <option value="3">3★ & above</option>
+            </select>
+        </div>
+        <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙 Dark Mode</button>
+    </header>
+
+    <!-- Trending Destinations -->
+    <section id="trending">
+        <h2>🔥 Trending Destinations</h2>
+        <div class="video-grid">
+            <div class="video-container"><iframe class="youtube-video lazyload" data-src="https://www.youtube.com/embed/1cN13_8wjC0?rel=0" allowfullscreen title="Trending Destination 1"></iframe></div>
+            <div class="video-container"><iframe class="youtube-video lazyload" data-src="https://www.youtube.com/embed/sUfIGpTUJ8o?rel=0" allowfullscreen title="Trending Destination 2"></iframe></div>
+            <div class="video-container"><iframe class="youtube-video lazyload" data-src="https://www.youtube.com/embed/K2dWqaOh3B4?rel=0" allowfullscreen title="Trending Destination 3"></iframe></div>
+            <div class="video-container"><iframe class="youtube-video lazyload" data-src="https://www.youtube.com/embed/ojhZPQG9J2g?rel=0" allowfullscreen title="Trending Destination 4"></iframe></div>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section id="mapSection">
+        <h2>🗺 Explore Destinations on Map</h2>
+        <div id="map"></div>
+    </section>
+
+    <!-- Destination List -->
+    <section id="destinations">
+        <h2>🌍 Explore More Destinations</h2>
+        <div class="destination-grid" id="destinationList"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Explore the World. All rights reserved.</p>
+    </footer>
+</body>
+</html>
